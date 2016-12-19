@@ -1,4 +1,14 @@
-<h1>тута</h1>
+<div ng-controller="mainCtrl">
+	<h1>тута</h1>
 
 <a href="#!/" >goto</a>
 <a href="#!/about">fdfd</a>
+
+<ul ng-repeat="market in dataMarkets">
+	<li>{{market}}</li>
+</ul>
+
+	<ul ui-sortable="sortableOptions" ng-model="dataMarkets">
+ 	 	<li ng-repeat="item in dataMarkets">{{ item }}</li>
+	</ul>
+</div>

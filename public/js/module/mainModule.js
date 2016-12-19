@@ -1,1 +1,1 @@
-angular.module('mainModule', ['ngRoute']);
+angular.module('mainModule', ['ngRoute','ui.sortable']);
