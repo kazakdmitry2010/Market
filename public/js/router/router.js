@@ -1,5 +1,5 @@
 angular
-    .module('app')
+    .module('mainModule')
     .config(config);
 
 function config($routeProvider) {
