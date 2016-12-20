@@ -3,6 +3,13 @@ angular.module('mainModule')
 		$scope.dataMarkets = dataService.Markets;
 
 		$scope.sortableOptions = {
-			items: '>li'
-		};
+    
+		    update: function(e, ui) {
+		      
+		    },
+		    stop: function(e, ui) {
+		      // this callback has the changed model
+		      
+		    }
+  		};
 	});
