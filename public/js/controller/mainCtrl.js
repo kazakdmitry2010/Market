@@ -13,9 +13,12 @@ angular.module('mainModule')
 			);
 		}
 
+		
+		$scope.add = function(){
+			return data.push({name:'fdfdf',adress:'str',product:'soap'});
+		}
 		$scope.lists = data;
 
-		$scope.markets = [1,2,3,4,5]
 		$scope.sortableOptions = {
     
 		    update: function(e, ui) {

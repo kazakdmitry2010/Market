@@ -15,15 +15,15 @@
 		 	 	<li type="none" ng-repeat="item in lists track by $index">
 		 	 	<div class="row market">
 		 	 	<div class="col-md-3">
-		 	 		{{ item.name }}
+		 	 		<a href="#" editable-text="item.name">{{item.name }}</a>
 		 	 	</div>
 		 	 	<div class="col-md-3">
-		 	 		{{ item.adress }}
+		 	 		<a href="#" editable-text="item.adress">{{ item.adress }}</a>
 		 	 		<br>
 		 	 		<a href="#!/googlemaps">google map</a>
 		 	 	</div>
 		 	 	<div class="col-md-3">
-		 	 		{{ item.product }}
+		 	 		<a href="#" editable-text="item.product">{{ item.product }}
 		 	 	</div>
 		 	 	 <div class="col-md-3">{{$index}}</div> 	
 		 	 	   
@@ -34,5 +34,5 @@
 			</ul>
 	  </div>	
 	</div>
-	
+	<button type="button" class="btn btn-default" ng-click="add()">Add a market with name product and adress</button>
 </div>
