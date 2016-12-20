@@ -7,7 +7,7 @@ function config($routeProvider) {
         .when('/', {
           templateUrl: "html/tpl1.html"
         })
-        .when('/about', {
+        .when('/googlemaps', {
           templateUrl: "html/tpl2.html"
         });
 }

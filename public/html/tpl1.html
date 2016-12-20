@@ -7,15 +7,23 @@
 
 <!--бутстрап бутсрапыч ёхохохо-->
 	<div class="row">
-	  <div class="col-md-10 col-md-offset-2" >
+	  <div class="col-md-12" >
 	  	
 	  	
 			<ul ui-sortable="sortableOptions" ng-model="lists">
 		 	  
 		 	 	<li type="none" ng-repeat="item in lists track by $index">
-		 	 	<div class="row">
-		 	 	<div class="col-md-9">
-		 	 		{{ item }}
+		 	 	<div class="row market">
+		 	 	<div class="col-md-3">
+		 	 		{{ item.name }}
+		 	 	</div>
+		 	 	<div class="col-md-3">
+		 	 		{{ item.adress }}
+		 	 		<br>
+		 	 		<a href="#!/googlemaps">google map</a>
+		 	 	</div>
+		 	 	<div class="col-md-3">
+		 	 		{{ item.product }}
 		 	 	</div>
 		 	 	 <div class="col-md-3">{{$index}}</div> 	
 		 	 	   
