@@ -1,5 +1,5 @@
 angular.module('mainModule')
-	.controller("mainCtrl",function($scope,dataService){
+	.controller("mainCtrl",function($scope,dataService,$cookieStore){
 		$scope.dataMarkets = dataService.Markets;
 
 		var t = $scope.dataMarkets;
@@ -15,9 +15,11 @@ angular.module('mainModule')
 
 		
 		$scope.add = function(){
-			return data.push({name:'fdfdf',adress:'str',product:'soap'});
+			 return data.push({name:'fdfdf',adress:'str',product:'soap'});
+			// return $cookieStore.put('key', data);
 		}
-		$scope.lists = data;
+
+		$scope.lists = data;//$cookieStore.get(key);
 
 		$scope.sortableOptions = {
     
