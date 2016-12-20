@@ -4,11 +4,27 @@
 <a href="#!/" >goto</a>
 <a href="#!/about">fdfd</a>
 
-<ul ng-repeat="market in dataMarkets">
-	<li>{{market}}</li>
-</ul>
 
-	<ul ui-sortable="sortableOptions" ng-model="dataMarkets">
- 	 	<li ng-repeat="item in dataMarkets">{{ item }}</li>
-	</ul>
+<!--бутстрап бутсрапыч ёхохохо-->
+	<div class="row">
+	  <div class="col-md-10 col-md-offset-2" >
+	  	
+	  	
+			<ul ui-sortable="sortableOptions" ng-model="lists">
+		 	  
+		 	 	<li type="none" ng-repeat="item in lists track by $index">
+		 	 	<div class="row">
+		 	 	<div class="col-md-9">
+		 	 		{{ item }}
+		 	 	</div>
+		 	 	 <div class="col-md-3">{{$index}}</div> 	
+		 	 	   
+					
+				</div>	
+		 	 	</li>
+		 	  
+			</ul>
+	  </div>	
+	</div>
+	
 </div>
