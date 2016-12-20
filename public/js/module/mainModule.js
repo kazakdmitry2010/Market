@@ -1,1 +1,1 @@
-angular.module('mainModule', ['ngRoute','ui.sortable']);
+angular.module('mainModule', ['ngRoute','ui.sortable','uiGmapgoogle-maps']);

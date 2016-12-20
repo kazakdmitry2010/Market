@@ -5,9 +5,11 @@ angular
 function config($routeProvider) {
     $routeProvider
         .when('/', {
-          templateUrl: "html/tpl1.html"
+          templateUrl: "html/tpl1.html",
+          controller:'mainCtrl'
         })
         .when('/googlemaps', {
-          templateUrl: "html/tpl2.html"
+          templateUrl: "html/tpl2.html",
+          controller: 'tpl2Ctrl'
         });
 }
