@@ -13,19 +13,23 @@
 		 	  
 		 	 	<li type="none" ng-repeat="item in lists track by $index">
 		 	 	<div class="row market">
+
 		 	 	<div class="col-md-3">
 		 	 		<a href="#" editable-text="item.name">{{item.name }}</a>
 		 	 	</div>
+
 		 	 	<div class="col-md-3">
 		 	 		<a href="#" editable-text="item.adress">{{ item.adress }}</a>
 		 	 		<br>
 		 	 		<a href="#!/googlemaps">google map</a>
 		 	 	</div>
+
 		 	 	<div class="col-md-3">
-		 	 		<a href="#" editable-text="item.product">{{ item.product }}
+		 	 		<a href="#" editable-text="item.product">{{ item.product }}</a>
 		 	 	</div>
+
 		 	 	 <div class="col-md-3">{{$index}}</div> 	
-		 	 	   
+		 	 	   </div>
 					
 					
 		 	 	</li>
